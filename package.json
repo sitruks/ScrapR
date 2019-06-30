@@ -1,0 +1,42 @@
+{
+  "name": "scrapr",
+  "version": "1.0.0",
+  "description": "just a humble web scraping app in a large app scraping world...",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "author": "Kurtis Santillanes",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.1.0",
+    "mongojs": "^2.6.0",
+    "mongoose": "^5.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sitruks/ScrapR.git"
+  },
+  "keywords": [
+    "web",
+    "scraping",
+    "app",
+    "mongodb",
+    "mongodb",
+    "atlas",
+    "mongoose",
+    "express",
+    "express-handlebars",
+    "axios",
+    "cheerio"
+  ],
+  "bugs": {
+    "url": "https://github.com/sitruks/ScrapR/issues"
+  },
+  "homepage": "https://github.com/sitruks/ScrapR#readme"
+}

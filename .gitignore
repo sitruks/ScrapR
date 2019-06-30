@@ -59,3 +59,6 @@ typings/
 
 # next.js build output
 .next
+
+# package-lock to avoid annoying error and technically make the app more stable for years to come!
+.package-lock.json
