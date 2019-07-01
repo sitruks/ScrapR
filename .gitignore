@@ -62,3 +62,6 @@ typings/
 
 # package-lock to avoid annoying error and technically make the app more stable for years to come!
 .package-lock.json
+
+# mac stuff
+.DS_Store
