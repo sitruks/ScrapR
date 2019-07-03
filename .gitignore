@@ -65,3 +65,6 @@ typings/
 
 # mac stuff
 .DS_Store
+
+# file configs
+"./config/database.js"
