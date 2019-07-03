@@ -27,15 +27,16 @@ var app = express();
 app.engine("hbs", hb);
 app.set("view engine", "hbs");
 
+app.use(cors({ credentials: true }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(__dirname + "views"));
 app.use(express.static(path.join(__dirname,"views")));
 // //make way for some custom css, js and images
 // app.use("/custom/css", express.static(__dirname + "/views/static/css/"));
 // app.use("/custom/js", express.static(__dirname + "/views/static/js/"));
 // app.use("/custom/imgs", express.static(__dirname + "/views/static/imgs/"));
 
-app.use(cors({ credentials: true }));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
 
 // app.use(express.static(path.join(__dirname,"routes/")));
 app.use("/users", users);
